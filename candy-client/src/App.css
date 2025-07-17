@@ -1,0 +1,60 @@
+:root {
+  --bg-dark: #282c34;
+  --text-light: #fff;
+  --accent: #61dafb;
+}
+
+html,body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: var(--bg-dark);
+  color: var(--text-light);
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  text-align: center;
+  padding: 1rem;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  animation: logo-spin 20s linear infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .App-logo { animation: none; }
+}
+
+@keyframes logo-spin {
+  to { transform: rotate(360deg); }
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  background-color: var(--bg-dark);
+}
+
+.App { text-align: center; }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

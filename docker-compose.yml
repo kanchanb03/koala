@@ -1,0 +1,17 @@
+services:
+  api:
+    build: .
+    ports:
+      - "4567:4567"
+    volumes:
+      - ./challenge.db:/app/challenge.db
+
+
+  web:
+    build:
+      context: ./candy-client
+      dockerfile: Dockerfile
+    depends_on:
+      - api
+    ports:
+      - "80:80"
